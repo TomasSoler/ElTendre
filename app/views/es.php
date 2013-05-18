@@ -64,6 +64,7 @@
                             </div><?php //  #diapoisitvaContainer END  ?>
                             <div class="flecha" id="next"></div>
                             <div id="diaposNav">
+                                <ul></ul>
                             </div>
                         </div> <?php //  #catalogoContent END  ?>
                     </div> <?php //  #catálogo END  ?>

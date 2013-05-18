@@ -75,15 +75,15 @@ header {
 	#logo {
 		width: 285px;
 		height: 135px;
-		z-index: 11;
+		z-index: 1000;
 		position: fixed;
 		background: url(../img/logo.png);
 	}
 	#nav {
 		position: fixed;
-		height: 50px;
+		height: 135px;
 		width: 100%;
-		z-index: 10;
+		z-index: 999;
 		top: 0;
 		background: url('../img/bgNav.png') repeat-x;
 
@@ -119,7 +119,7 @@ header {
 					margin-right: 20px;
 					margin-top: -20px;
 					padding-left: 5px;
-					z-index: 100; // Revise this, need it all in order.
+					z-index: 1000; // Revise this, need it all in order.
 
 					background: hsla(345, 4.0816%, 19.2157%, 0.8);
 
@@ -297,8 +297,8 @@ p {
     left: 0;
     z-index: -99;
 }
-#innerdiapos li {
-    float: left;
+#innerdiapos li 
+{    float: left;
     width: 550px;
     height: 400px;
     margin: 0;
@@ -313,7 +313,7 @@ p {
 }
 #diaposNav {
     position: relative;
-    width: 250px;
+    width: 300px;
     height: 15px;
     margin: -300px auto 0;
 }
@@ -378,13 +378,7 @@ p {
 #linksContent ul li a:hover {
     color: #b1954c;
 }
-// #contactarContent {
-//     position: relative;
-//     padding: 20px;
-//     top: 35%;
-//     right: -70%;
-//     width: 300px;
-// }
+
 #contactar {
 	float: clear;
 }
@@ -411,35 +405,40 @@ p {
 	clear: both;
 	
 }
-/*#mapContent {
+#mapContent {
     width: 575px;
     height: 205px;
     overflow: hidden;
-}*/
-/*#mapContent img {
-    float: left;
-    z-index: 104;
+
+    img {
+        float: left;
+        z-index: 104;
+    }
+    h1 {
+        position: relative;
+        border: 0;
+        left: 40px;
+        top: -10px;
+    }
+    p {
+        position: relative;
+        left: 35px;
+        margin-top: -10px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        -webkit-transition: all 400ms ease-in;
+        -moz-transition: all 400ms ease-in;
+        &:hover {
+			color: @golden;
+        }
+    }
+    strong {
+    	color: black;
+    }
 }
-#mapContent h1 {
-    position: relative;
-    border: 0;
-    left: 40px;
-    top: -10px;
-}
-#mapContent p {
-    position: relative;
-    left: 35px;
-    margin-top: -10px;
-}
-#mapContent a {
-    text-decoration: none;
-    color: black;
-    -webkit-transition: all 400ms ease-in;
-    -moz-transition: all 400ms ease-in;
-}
-*/
-#formulario {
-}
+
 #formulario div {
     font-family: 'Droid Sans', 'Helvetica Neue', arial, sans-serif;
     color: #c1c1c1;
