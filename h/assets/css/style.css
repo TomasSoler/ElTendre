@@ -1,0 +1,1075 @@
+/* 
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ * 
+ * ==|== normalize ==========================================================
+*/
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+*/
+
+html { font-size: 100%; /*overflow-y: scroll*/; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+/* 
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+*/
+
+::-moz-selection { background: #9e150f; color: #fff; text-shadow: none; }
+::selection { background: #9e150f; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e 
+*/
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9 
+*/
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/* 
+ * 1. Correct color not inheriting in IE6/7/8/9 
+ * 2. Correct alignment displayed oddly in IE6/7 
+*/
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+*/
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+*/
+
+button, input { line-height: normal; *overflow: visible; }
+
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+*/
+
+table button, table input { *overflow: auto; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+*/
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+/*
+ * Consistent box sizing and appearance
+*/
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/* 
+ * Remove inner padding and border in FF3/4: h5bp.com/l 
+*/
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/* 
+ * 1. Remove default vertical scrollbar in IE6/7/8/9 
+ * 2. Allow only vertical resizing
+*/
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* ==|== primary styles =====================================================
+   Author: 
+
+/*
+              NAVIGATION STYLING
+*/
+/* Droid Sans (style: normal, weight: 900) is not available */
+/* However, style: normal, weight: normal is available */
+/* However, style: normal, weight: bold is available */
+@media screen {
+    @font-face {
+        font-family: 'Droid Sans';
+        font-style: normal;
+        font-weight: bold;
+        src: local('Droid Sans Bold'), local('DroidSans-Bold'), url('http://themes.googleusercontent.com/static/fonts/droidsans/v3/EFpQQyG9GqCrobXxL-KRMQFhaRv2pGgT5Kf0An0s4MM.woff') format('woff');
+    }
+}
+@media screen {
+    @font-face {
+        font-family: 'Droid Sans';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Droid Sans'), local('DroidSans'), url('http://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciBsxEYwM7FgeyaSgU71cLG0.woff') format('woff');
+    }
+}
+@media screen {
+    @font-face {
+        font-family: 'Droid Serif';
+        font-style: italic;
+        font-weight: bold;
+        src: local('Droid Serif Bold Italic'), local('DroidSerif-BoldItalic'), url('http://themes.googleusercontent.com/static/fonts/droidserif/v3/c92rD_x0V1LslSFt3-QEpgRV2F9RPTaqyJ4QibDfkzM.woff') format('woff');
+    }
+}
+@media screen {
+    @font-face {
+        font-family: 'Droid Serif';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Droid Serif'), local('DroidSerif'), url('http://themes.googleusercontent.com/static/fonts/droidserif/v3/0AKsP294HTD-nvJgucYTaIbN6UDyHWBl620a-IRfuBk.woff') format('woff');
+    }
+}
+@media screen {
+    @font-face {
+        font-family: 'Droid Serif';
+        font-style: normal;
+        font-weight: bold;
+        src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url('http://themes.googleusercontent.com/static/fonts/droidserif/v3/QQt14e8dY39u-eYBZmppwTqR_3kx9_hJXbbyU8S6IN0.woff') format('woff');
+    }
+}
+@media screen {
+    @font-face {
+        font-family: 'Droid Serif';
+        font-style: italic;
+        font-weight: normal;
+        src: local('Droid Serif Italic'), local('DroidSerif-Italic'), url('http://themes.googleusercontent.com/static/fonts/droidserif/v3/cj2hUnSRBhwmSPr9kS5899kZXW4sYc4BjuAIFc1SXII.woff') format('woff');
+    }
+}
+
+html, body {
+    overflow:hidden;
+    background:#a3a3a3;
+
+}
+/*.rejilla {
+    background: url('http://karimhossenbux.com/lab/minimalista/wp-content/themes/minimalista/images/raster.png');
+}*/
+strong {
+    font-weight: 700;
+    color: white;
+    /*    font-size: */
+}
+
+#logo {
+    background: url(../img/logo.png);
+    position: fixed;
+    width: 285px;
+    height: 135px;
+    top: 0px;
+    left: 0px;
+    z-index: 99999999999999;
+}
+
+#nav {
+    background: url(../img/bgNav.png) repeat-x;
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    padding-bottom: 85px;
+    width: 100%;
+    z-index: 115;
+}
+
+#nav ul {
+    padding-top: 8px;
+    padding-right: 20px;
+    float: right;
+}
+
+#nav ul li {
+    display: inline;
+    color: white;
+}
+
+#nav ul li a {
+    padding: 5px;
+    text-decoration: none;
+    margin: auto 0;
+    list-style: none;
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Droid Sans', sans-serif;
+    text-transform: uppercase;
+    -webkit-transition: all 400ms ease-in;
+    -moz-transition: all 400ms ease-in;
+}
+
+#nav ul li a:hover {
+    color: #b1954c;
+}
+
+#nav ul li a.selectedNav {
+    color: #b1954c;
+}
+
+ul.submenu {
+    display: none;
+    padding:1px; 
+    position:absolute;
+    top: 28px;
+    right: 20px;
+    list-style:none;
+    background: hsla(345, 4.0816%, 19.2157%, 0.9);
+    background: transparent;
+
+    width: 17px;
+}
+ul.submenu li {
+    float:none;
+    text-align: center;
+    display: list-item;
+    list-style: none;
+    float:none;
+}
+
+li.langSelected {
+    padding: 2px;
+    margin-right: 5px;
+}
+
+
+/*
+    END OF NAVIGATION STYLING
+*/
+
+#main{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;left:0;
+
+}
+p {
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.clear{
+    clear: both;    
+}
+
+.scrollToPage {
+    width: 33.33333333333333%;
+    height:100%;
+    float:left;
+
+}
+.scrollToPage h1 {
+    font-family: 'Droid Serif', serif;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.scrollToPage p {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+#firstRow {
+    width: 300%;
+    height: 100%;
+}
+
+#inicio {
+    background: url(../img/pattern.png) repeat 0 0, url(../img/sectBgs/fachada.jpg) no-repeat center;
+    background-size: 16px, 100%;
+}
+
+#inicioContent {
+    position: relative;
+    color: white;
+    padding: 20px;
+    top: 55%;
+    left: 5%;
+    width: 400px;
+    font-size: 16px;
+    text-align: center;
+    background-color: hsla(0, 0%, 6%, 0.8);
+    z-index: 0;
+
+    -moz-border-radius: 1px; 
+    -webkit-border-radius: 1px; 
+    border-radius: 1px; 
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    -moz-box-shadow: 0px 1px 29px #000; 
+    -webkit-box-shadow: 0px 1px 29px #000; 
+    box-shadow: 0px 1px 29px #000; 
+}
+#historia {
+    background:  url(../img/pattern.png) repeat 0 0, url(../img/sectBgs/maquinas.jpg) no-repeat center;
+    background-size: 16px, 100%;
+
+}
+
+#historiaContent {
+    position: relative;
+    color: white;
+    padding: 20px;
+    top: 40%;
+    left: 5%;
+    width: 500px;
+    background-color: hsla(0, 0%, 6%, 0.8);
+    -moz-border-radius: 1px; 
+    -webkit-border-radius: 1px; 
+    border-radius: 1px; 
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    -moz-box-shadow: 0px 1px 29px #000; 
+    -webkit-box-shadow: 0px 1px 29px #000; 
+    box-shadow: 0px 1px 29px #000; 
+
+}
+#elaboracion {
+    background: url(../img/pattern.png) repeat 0 0, url(../img/sectBgs/rejas.jpg) no-repeat center;
+    background-size: 16px, 100%;
+}
+#elaboracionContent {
+    position: relative;
+    color: white;
+    padding: 20px;
+    top: 55%;
+    left: 5%;
+    width: 500px;
+    background-color: hsla(0, 0%, 6%, 0.8);
+
+    -moz-border-radius: 1px; 
+    -webkit-border-radius: 1px; 
+    border-radius: 1px; 
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    -moz-box-shadow: 0px 1px 29px #000; 
+    -webkit-box-shadow: 0px 1px 29px #000; 
+    box-shadow: 0px 1px 29px #000; 
+
+}
+
+#catalogo { 
+    background: #a3a3a3 url(../img/sectBgs/bgCatalogo.jpg) no-repeat center;
+    background-size: 100%;
+}
+
+#diapostivaContainer {
+}
+
+#diapositivas {
+    position: relative;
+    clear: left;
+    margin: 0px;
+    padding: 0px;
+    height: 650px;
+    width: 550px;
+    padding: 0;
+    z-index: 90;
+
+}
+#innerdiapos {
+    width: 550px;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+    top: -50px;
+}
+
+#innerdiapos ul{
+    width: 5000px;
+    height: 650px;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+}
+
+#innerdiapos li{
+    float: left;
+    width: 550px;
+    height: 650px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+
+.diaposEach {
+    position: relative;
+    height: 650px;
+    width: 550px;
+}
+#diaposNav {
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    height: 15px;
+    left: 75px;
+}
+.diapoNav {
+    background: url(../img/diapoNav.png) no-repeat 0px 0px;
+    position: relative;
+    float: left;
+    margin: 10px;
+    height: 15px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 99;
+}
+.diapoNav:hover, .selected {
+    background-position: 0px -15px;
+}
+#prev {
+    position: relative;
+    top: 250px;
+    right: 60px;
+    height: 52px;
+    width: 30px;
+    background: url(../img/arrows.png) no-repeat 0px 0px;
+}
+#prev:hover {
+    background: url(../img/arrows.png) no-repeat 0px -52px;
+}
+#next {
+    position: relative;
+    left: 600px;
+    bottom: 450px;
+    height: 52px;
+    width: 30px;
+    background: url(../img/arrows.png) no-repeat -30px 0px;
+}
+#next:hover {
+    background: url(../img/arrows.png) no-repeat -30px -52px;
+}
+
+#catalogoContent{
+    position: relative;
+    height: 650px;
+    width: 650px;
+
+}
+
+#galeria {
+    background: #a3a3a3 url(../img/sectBgs/bgCatalogo.jpg) no-repeat center;
+    background-size: 100%;
+
+} 
+#galeriaContent {
+    position: relative;
+    color: white;
+    height: 670px;
+    width: 800px;
+    /*    -moz-border-radius: 1px; 
+        -webkit-border-radius: 1px; 
+        border-radius: 1px; 
+    
+    
+        -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    
+        -moz-box-shadow: 0px 1px 29px #000; 
+        -webkit-box-shadow: 0px 1px 29px #000; 
+        box-shadow: 0px 1px 29px #000; */
+
+}
+/*
+#eventos {
+    background: url(../img/sectBgs/bg6.jpg) no-repeat center;
+    background-size: 100%;
+}
+#eventosContent{
+      position: relative;
+        color: white;
+        padding: 20px;
+        top: 15%;
+        left: 20%;
+        width: 300px;
+        height: 600px;
+        background-color: hsla(0, 0%, 7%, 0.8);
+    
+        -moz-border-radius: 1px; 
+        -webkit-border-radius: 1px; 
+        border-radius: 1px; 
+        -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+        -moz-box-shadow: 0px 1px 29px #000; 
+        -webkit-box-shadow: 0px 1px 29px #000; 
+        box-shadow: 0px 1px 29px #000; 
+
+}
+#distribuidores {
+    background: url(../img/sectBgs/bg7.jpg) no-repeat center;
+    background-size: 100%;
+}
+#distribuidoresContent {
+     position: relative;
+        color: white;
+        padding: 20px;
+        top: 15%;
+        right: -60%;
+        width: 300px;
+        height: 600px;
+        background-color: hsla(0, 0%, 7%, 0.8);
+    
+    
+        -moz-border-radius: 1px; 
+        -webkit-border-radius: 1px; 
+        border-radius: 1px; 
+        -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+        -moz-box-shadow: 0px 1px 29px #000; 
+        -webkit-box-shadow: 0px 1px 29px #000; 
+        box-shadow: 0px 1px 29px #000; 
+}*/
+#links {
+    background: #a3a3a3 url(../img/sectBgs/bgCatalogo.jpg) no-repeat center;
+    background-size: 100%;
+    /*    background: url(../img/sectBgs/bg8.jpg) no-repeat center;
+    background:  url(../img/pattern.png) repeat 0 0, url(../img/sectBgs/bg_1024x768_403.jpg) no-repeat center;*/
+}#linksContent {
+    position: relative;
+    color: white;
+    padding: 20px;
+    top: 35%;
+    right: -70%;
+    width: 300px;
+
+
+    background-color: hsla(0, 0%, 7%, 0.8);
+    -moz-border-radius: 1px; 
+    -webkit-border-radius: 1px; 
+    border-radius: 1px; 
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    -moz-box-shadow: 0px 1px 29px #000; 
+    -webkit-box-shadow: 0px 1px 29px #000; 
+    box-shadow: 0px 1px 29px #000; 
+
+}
+#linksContent ul {
+    margin-left: -38px;
+}
+
+#linksContent ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 5px 0;
+}
+#linksContent ul li a {
+    text-decoration: none;
+    color: white;
+}
+#linksContent ul li a:hover {
+    color: #b1954c;
+}
+
+
+#contactarContent {
+    position: absolute;
+    color: white;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: hsla(0, 0%, 7%, 0.8);
+
+
+    -moz-border-radius: 1px; 
+    -webkit-border-radius: 1px; 
+    border-radius: 1px; 
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    -moz-box-shadow: 0px 1px 29px #000; 
+    -webkit-box-shadow: 0px 1px 29px #000; 
+    box-shadow: 0px 1px 29px #000; 
+}
+#mapContent {
+	width: 575px;
+	height: 205px;
+	overflow: hidden;
+}
+#mapContent img {
+	float: left;
+	z-index: 104;
+}
+#mapContent h1 {
+	position: relative;
+	border: 0;
+	left: 40px;
+	top: -10px;
+}
+#mapContent p {
+	position: relative;
+	left: 35px;
+	margin-top: -10px;
+}
+#mapContent a {
+	text-decoration: none;
+	color: black;
+	-webkit-transition: all 400ms ease-in;
+    -moz-transition: all 400ms ease-in;
+}
+
+#formulario {
+
+}
+#formulario div {
+    font-family: 'Droid Sans', sans-serif;
+    color: #c1c1c1;
+    font-size: 15px;
+    margin-top: 35px;
+    float: left;
+    width: 60px;
+    display:block;
+}
+
+#formulario input {
+    height: 30px;
+    width: 290px; 
+    float: right;
+    margin-top: 20px;
+}
+
+#formulario textarea {
+    margin-top:20px;
+    width: 290px; 
+    height: 100px;
+    float: right;
+}
+#formulario #send {
+    float: right;
+    width: 60px; 
+    border: 1px solid white; 
+    text-align: center; 
+    padding: 10px 10px; 
+    margin-top: 15px;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+#formulario #send:hover {
+    cursor: pointer;
+}
+#footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: url(../img/bgFooter.png) repeat-x;
+    height: 50px;
+    padding-top: 20px;
+    z-index: 140;
+}
+
+#footer p {
+    z-index: 2;
+    padding-top: 6px;
+}
+
+#footer #copyright p {
+    padding-left: 30px;
+    float: left;
+    color: #eeeeee;    
+
+}
+
+#footer #dev p a {
+    padding-right: 30px;
+    text-decoration: none;
+    float: right;
+    color: #ccc;
+    -webkit-transition: all 400ms ease-in;
+    -moz-transition: all 400ms ease-in;
+}
+#footer #dev p a:hover {
+    color: white;
+}
+
+/* Experimentos selectBOX */
+
+.tzSelect{
+
+    /* This is the container of the new select element */
+
+    height:35px;
+    display:inline-block;
+    min-width:100px;
+    position:relative;
+
+}
+
+.tzSelect .selectBox{
+    position:absolute;
+
+    height:100%;
+    width:100%;
+
+    /* Font settings */
+
+    /*    font:13px/34px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        text-align:center;
+        text-shadow:1px 1px 0 #EEEEEE;
+        color:#666666;*/
+
+    /* Using CSS3 multiple backgrounds and a fallback */
+
+    background: #ddd;
+
+    cursor:pointer;
+
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+
+.tzSelect .selectBox:hover,
+.tzSelect .selectBox.expanded{
+    color:#2c5667;
+    text-shadow:1px 1px 0 #9bc2d0;
+}
+
+.tzSelect .dropDown{
+    position:absolute;
+    top:35px;
+    left:0;
+    width:100%;
+    border:1px solid #32333b;
+    border-width:0 1px 1px;
+    list-style:none;
+
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -moz-box-shadow:0 0 4px #111;
+    -webkit-box-shadow:0 0 4px #111;
+    box-shadow:0 0 4px #111;
+}
+
+.tzSelect li{
+    height:30px;
+    cursor:pointer;
+    position:relative;
+
+    background: #222;
+
+}
+.tzSelect li span{
+    left:45%;
+    position:absolute;
+    top:5px;
+}
+
+
+.clear{
+    clear:both;
+}
+
+/* GALERÍA */
+
+#STGallery {
+    position:relative;
+    width: 800px;
+    height: 550px;
+    line-height: normal;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    /*    -moz-background-clip: padding; 
+        -webkit-background-clip: padding-box; 
+        background-clip: padding-box; 
+    
+        -moz-box-shadow: 0px 1px 10px #000; 
+        -webkit-box-shadow: 0px 1px 10px #000; 
+        box-shadow: 0px 1px 10px #000; */
+}
+#STGallery ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-start: 0;
+    -moz-padding-start: 0;
+    -webkit-padding-start: 0;
+
+}
+
+
+
+#STGallery ol li {
+    padding-right: 25px;
+    float: left;
+}
+.STGElement {
+
+}
+.STGDescription {
+    display: none;
+}
+.STGThumb {
+    display: none;
+
+
+
+}
+.STGContent {
+    width: 810px;
+    height: 560px;
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    -moz-box-shadow: 0px 1px 6px #000; 
+    -webkit-box-shadow: 0px 1px 6px #000; 
+    box-shadow: 0px 1px 6px #000; 
+
+}
+#STGThumbs {
+    position: relative;
+    height: 145px;
+    width: 811px;
+    overflow: hidden;
+    margin-left: -6px;
+    top: -40px;
+}
+
+#STGThumbs ul {
+    list-style: none;
+    padding-start: 0;
+    -moz-padding-start: 0;
+    -webkit-padding-start: 0;
+}
+
+.ie9 #STGThumbs ul {
+    padding-left: -200px; 
+}
+#STGThumbs ul li {
+    float: left;
+}
+
+#STGThumbs img {
+    position: relative;
+    margin: 6px;
+    width: 150px;
+
+    /*    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+        -moz-box-shadow: 0px 1px 6px #000; 
+        -webkit-box-shadow: 0px 1px 6px #000; 
+        box-shadow: 0px 1px 6px #000; */
+}
+.shadow {
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    -moz-box-shadow: 0px 1px 6px #000; 
+    -webkit-box-shadow: 0px 1px 6px #000; 
+    box-shadow: 0px 1px 6px #000; 
+}
+
+#thumbs-prev {
+    position: relative;
+    cursor: pointer;
+    right: 50px;
+    top: 60px;
+    height: 52px;
+    width: 30px;
+    background: url(../img/arrows.png) no-repeat 0px 0px;
+}
+#thumbs-prev:hover {
+    background: url(../img/arrows.png) no-repeat 0px -52px;
+}
+#thumbs-next {
+    position: relative;
+    cursor: pointer;
+    float: right;
+    left: 50px;
+    top: -140px;
+    height: 52px;
+    width: 30px;
+    background: url(../img/arrows.png) no-repeat -30px 0px;
+}
+#thumbs-next:hover {
+    background: url(../img/arrows.png) no-repeat -30px -52px;
+}
+/* end GALERIA */
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+    /* Style adjustments for viewports 480px and over go here */
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* Style adjustments for viewports 768px and over go here */
+
+}
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+    a, a:visited { text-decoration: underline; }
+    a[href]:after { content: " (" attr(href) ")"; }
+    abbr[title]:after { content: " (" attr(title) ")"; }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { display: table-header-group; } /* h5bp.com/t */
+    tr, img { page-break-inside: avoid; }
+    img { max-width: 100% !important; }
+    @page { margin: 0.5cm; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3 { page-break-after: avoid; }
+}

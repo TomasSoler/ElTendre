@@ -1,0 +1,363 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>El Tendre</title>
+        <meta name="description" content="">
+        <meta name="author" content="73dev">
+        <!--[if lt IE 9]>
+        <style>
+            ul.submenu {
+                background: transparent;
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5322E2F,endColorstr=#E5322E2F)"; /* IE8 */
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5322E2F,endColorstr=#E5322E2F);   /* IE6 & 7 */
+                zoom: 1;
+            }
+            #inicio {
+                -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/sectBgs/fachada.jpg', sizingMethod='scale')";
+                filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/sectBgs/fachada.jpg', sizingMethod='scale');
+            }
+            #inicioContent {
+                background: transparent;
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC0F0F0F,endColorstr=#CC0F0F0F)"; /* IE8 */
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC0F0F0F,endColorstr=#CC0F0F0F);   /* IE6 & 7 */
+                zoom: 1;
+            }
+            #historia {
+                -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/sectBgs/maquinas.jpg', sizingMethod='scale')";
+                filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/sectBgs/maquinas.jpg', sizingMethod='scale');
+            }
+            #historiaContent {
+                background: transparent;
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC0F0F0F,endColorstr=#CC0F0F0F)"; /* IE8 */
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC0F0F0F,endColorstr=#CC0F0F0F);   /* IE6 & 7 */
+                zoom: 1;
+            }
+            #elaboracion {
+                -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/sectBgs/rejas.jpg', sizingMethod='scale')";
+                filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/sectBgs/rejas.jpg', sizingMethod='scale');
+            }
+            #elaboracionContent {
+                background: transparent;
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC0F0F0F,endColorstr=#CC0F0F0F)"; /* IE8 */
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC0F0F0F,endColorstr=#CC0F0F0F);   /* IE6 & 7 */
+                zoom: 1;
+            }
+            #catalogo {
+                -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/sectBgs/bgCatalogo.jpg', sizingMethod='scale')";
+                filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/sectBgs/bgCatalogo.jpg', sizingMethod='scale');
+            }
+            #galeria {
+                -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/sectBgs/bgCatalogo.jpg', sizingMethod='scale')";
+                filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/sectBgs/bgCatalogo.jpg', sizingMethod='scale');
+            }
+            #links {
+                -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/sectBgs/bgCatalogo.jpg', sizingMethod='scale')";
+                filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/sectBgs/bgCatalogo.jpg', sizingMethod='scale');
+            }
+            #linksContent {
+                background: transparent;
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC0F0F0F,endColorstr=#CC0F0F0F)"; /* IE8 */
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC0F0F0F,endColorstr=#CC0F0F0F);   /* IE6 & 7 */
+                zoom: 1;
+            }
+        </style>
+        <![endif]-->
+        <link rel="stylesheet" href="assets/css/style.min.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+        <script src="assets/js/mylibs/jquery.scrollTo-1.4.2-min.js"></script>
+        <script defer src="assets/js/script.min.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+            <div id="konamiCode" style="z-index: 9999999; display: none; border: solid white 10px; ">
+                <img src="assets/img/konami.jpg" style="border: 10px white;"/>
+            </div>
+                <div id="logo">
+                </div> <!-- #logo END -->
+                <div id="nav">
+                    <ul class="navLinks">
+                        <li class="scroll"><a href="#inicio" class="selectedNav">Inicio</a></li>
+                        <li class="scroll"><a href="#historia">Historia</a></li>
+                        <li class="scroll"><a href="#elaboracion">Elaboraci&oacute;n</a></li>
+                        <li class="scroll"><a href="#catalogo">Cat&aacute;logo</a></li>
+                        <li class="scroll"><a href="#galeria">Galer&iacute;a</a></li>
+                        <li class="scroll"><a href="#links">Links</a></li>
+                        <li class="scroll"><a href="#contactar">Contactar</a></li>
+                        <li class="langSelected"><img src="assets/img/SP.png"/>
+                            <ul class="submenu">
+                                <li><a href="en_index.html"><img src="assets/img/GB.png"/></a></li>
+                                <li><a href="fr_index.html"><img src="assets/img/FR.png"/></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> <!-- #nav END -->
+            </header>
+            <div id="main" role="main" >
+                <div id="firstRow" class="clear rejilla">
+                    <div id="inicio" class="scrollToPage">
+                        <div id="inicioContent">
+                            <p>Bienvenido a la página web de la almazara el Tendre.</p>
+                        </div> <!-- #inicioContent END -->
+                    </div> <!-- #inicio END -->
+                    <div id="historia" class="scrollToPage">
+                        <div id="historiaContent">
+                            <h1>Historia</h1>
+                            <p>En los siglos pasados la comarca del Baix Vinalopó poseía una gran tradición olivarera, donde existían numerosas almazaras extendidas por toda la región. En ellas se cosechaba ese oro líquido propio del Mediterráneo y que tanta importancia tiene en nuestra dieta alimenticia.</p>
+                            <p>La Almazara <strong>“El Tendre”</strong> es una empresa centenaria cuyos orígenes se remontan a <strong>1839</strong>, cuando Don Joaquín Sempere García molturaba la aceituna en la almazara situada en la callejuela Puertas Tahullas (actual Barrio del Raval). Más tarde, en 1873, la almazara fue trasladada al <strong>“Huerto del Tendre”</strong>, donde se encuentra ubicada actualmente y de la cual adquiere su nombre la marca.</p>
+                        </div> <!-- #historiaContent END -->
+                    </div> <!-- #historia END -->
+                    <div id="elaboracion" class="scrollToPage">
+                        <div id="elaboracionContent">
+                            <h1>Elaboraci&oacute;n</h1>
+                            <p>La familia Sempere, durante 6 generaciones, ha mantenido la estructura familiar de la Almazara <strong>“El Tendre”</strong>, trasmitiendo a sus descendientes el arte tradicional más puro del proceso aceitero. De este modo, en esta almazara, a pesar de la modernización de los modos de producción que exige la continua evolución de la industria, siguen manteniéndose fieles al espíritu de la elaboración tradicional que han mantenido vivo desde <strong>1839</strong>.</p>
+                        </div> <!-- #elaboracionContent END -->
+                    </div> <!-- #elaboración END -->
+                    <div id="catalogo" class="scrollToPage">
+                        <div id="catalogoContent">
+                            <div id="prev"></div>
+                            <div id="diapostivaContainer">
+                                <div id="diapositivas">
+                                    <div id="innerdiapos">
+                                        <ul>
+                                            <li><img src="assets/img/diapo1.png" height="650" width="550" class="diaposEach" /></li>
+                                            <li><img src="assets/img/diapo2.png" height="650" width="550" class="diaposEach" /></li>
+                                            <li><img src="assets/img/diapo3.png" height="650" width="550" class="diaposEach" /></li>
+                                            <li><img src="assets/img/diapo4.png" height="650" width="550" class="diaposEach" /></li>
+                                            <li><img src="assets/img/diapo5.png" height="650" width="550" class="diaposEach" /></li>
+                                        </ul>
+                                    </div> <!-- #innerdiapos END -->
+                                </div><!-- #diapostivas END -->
+                            </div><!-- #diapoisitvaContainer END -->
+                            <div id="next"></div>
+                            <div id="diaposNav">
+                                <div id="firstDiapo" class="selected diapoNav"><a href="#"></a></div>
+                                <div id="secondDiapo" class="diapoNav"><a href="#"></a></div>
+                                <div id="thirdDiapo" class="diapoNav"><a href="#"></a></div>
+                                <div id="forthDiapo" class="diapoNav"><a href="#"></a></div>
+                                <div id="fifthDiapo" class="diapoNav"><a href="#"></a></div>
+                            </div>
+                        </div> <!-- #catalogoContent END -->
+                    </div> <!-- #catálogo END -->
+                    <div id="galeria" class="scrollToPage">
+                        <div id="galeriaContent">
+                            <div id="STGallery">
+                                <ol>
+                                    <li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/1.jpg"/>
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/1.png"  />
+                                            </div>                    
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/2.jpg"/>
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/2.png" />
+                                            </div>                    
+                                        </div>
+                                    </li> <li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/3.jpg" />
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/3.png" />
+                                            </div>                    
+                                        </div>
+                                    </li> <li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/4.jpg" />
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/4.png" />
+                                            </div>                    
+                                        </div>
+                                    </li><li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/5.jpg" />
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/5.png" />
+                                            </div>                    
+                                        </div>
+                                    </li><li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/6.jpg" />
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/6.png" />
+                                            </div>                    
+                                        </div>
+                                    </li><li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/7.jpg" />
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/7.png" />
+                                            </div>                    
+                                        </div>
+                                    </li><li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/8.jpg" />
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/8.png" />
+                                            </div>                    
+                                        </div>
+                                    </li><li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/9.jpg" />
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/9.png" />
+                                            </div>                    
+                                        </div>
+                                    </li><li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/10.jpg" />
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/10.png" />
+                                            </div>                    
+                                        </div>
+                                    </li><li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/11.jpg" />
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/11.png" />
+                                            </div>                    
+                                        </div>
+                                    </li><li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/12.jpg" />
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/12.png" />
+                                            </div>                    
+                                        </div>
+                                    </li><li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/13.jpg" />
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/13.png" />
+                                            </div>                    
+                                        </div>
+                                    </li><li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/14.jpg" />
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/14.png" />
+                                            </div>                    
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/15.jpg" />
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/15.png" />
+                                            </div>                    
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="STGElement">
+                                            <div class="STGContent">
+                                                <img src="assets/gallery/img/16.jpg" />
+                                            </div>
+                                            <div class="STGThumb">
+                                                <img src="assets/gallery/img/thumbs/16.png" />
+                                            </div>                    
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div id="thumbs-prev"></div>
+                            <div id="STGThumbs">
+                                <ul>
+                                </ul>
+                            </div>
+                            <div id="thumbs-next"></div>
+                        </div> <!-- #galeriaContent END -->
+                    </div> <!-- #galeria END -->
+                    <div id="links" class="scrollToPage">
+                        <div id="linksContent">              
+                            <h1>Amigos De "El Tendre"</h1>
+                            <ul>
+                                <li><a href="http://www.sys.es/" target="_blank">Destilerías SYS</a></li>
+                                <li><a href="http://www.carrizales.es/"  target="_blank">Carrizales</a></li>
+                                <li><a href="http://www.vinosladama.com/" target="_blank">Bodegas Faelo (Matola)</a></li>
+                                <li><a href="http://www.lacteossegarra.com/" target="_blank">Lácteos Segarra</a></li>
+                                <li><a href="http://www.a-dalua.com/" target="_blank">Confitería Dalua</a></li>
+                                <li><a href="http://www.granavida.com/" target="_blank">Granavida</a></li>
+                                <li><a href="http://www.campodeelche.com/" target="_blank">Campo de Elche</a></li>
+                                <li><a href="http://www.turismeruralelx.es/" target="_blank">Associació per el desenvolupament del camp d'Elx</a></li>
+                                <li><a href="http://www.infusionesibarra.es" target="_blank">Infusiones Ibarra</a></li>
+                                <li><a href="http://www.infusionesibarra.es" target="_blank">TOMAChaf</a></li>
+                            </ul>
+                        </div> <!-- #linksContent END -->
+                    </div> <!-- #links END -->
+                    <div id="contactar" class="scrollToPage">
+                        <div id="contactarMapa" style="height: 100%; width: 100%; position: relative;"></div>
+                        <div id="contactarContent" style="z-index:9999999;">
+                            <div id="formulario">
+                                <form id="contacto" action="assets/bin/form.php" method="post">
+                                    <h1 style="padding-bottom: 10px; border-bottom: 2px solid white;">Formulario de contacto</h1>
+                                    <div style="margin-top: 32px;">Nombre</div><input id="name" type="text" name="nombre"/>
+                                    <div>Email</div><input id="mail" type="text" name="Email"/>
+                                    <div>Tel&eacute;fono</div><input id="phone" type="text" name="Phone"/>
+                                    <div>Mensaje</div><textarea id="comentario" name="comentario"></textarea>
+                                    <div id="send" class="">ENVIAR</div>
+                                </form>
+                            </div> <!-- #formulario END -->  
+                        </div> <!-- #contactarContent END -->
+                    </div> <!-- #contactar END -->
+                </div> <!-- end of #firstRow -->
+                <footer>
+                    <div id="footer">
+                        <div id="copyright">
+                            <p>© 2011 - Almazara El Tendre - Ptda. Alzabares Alto, 233 - 03290 - Tlf. 34 965 452 339</p>
+                        </div> <!-- #copyright END -->
+                        <div id="dev">
+                            <p><a href="http://73dev.com">73dev</a></p>
+                        </div> <!-- #73dev END -->
+                    </div> <!-- #footer END -->
+                </footer>
+            </div> <!--! end of #main -->
+        </div><!--! end of #container -->
+        <script>
+            var _gaq=[['_setAccount','UA-29232851-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+
+</html>
