@@ -1,0 +1,1 @@
+<?php require_once 'swiftmailer/swift_required.php'; ?>
